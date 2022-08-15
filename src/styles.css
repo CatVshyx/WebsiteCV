@@ -1,0 +1,460 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body{
+    color: #0f141e;
+    font: normal 18px 'Roboto', sans-serif;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+    transition: all 0.4s ease;
+}
+.wrapper{
+    min-height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-image: radial-gradient(circle at 80.9% 50%, #008fb5 0, #008fc2 5%, #008dce 10%, #008cd8 15%, #008ae1 20%, #0087e7 25%, #0083eb 30%, #007fed 35%, #007aed 40%, #0074ea 45%, #486ee5 50%, #6d67de 55%, #885fd5 60%, #9d57ca 65%, #af4ebe 70%, #bd45b0 75%, #c83ca2 80%, #d13593 85%, #d72f83 90%, #db2d74 95%, #dd2e64 100%);
+}
+/*HEADER*/
+.top-side{
+    /* height: 100px;
+    width: 100px; */
+    width: 100%;
+    height: 60px;
+    padding: 0px;
+    margin: 10px 20px;
+    display: block;
+    border-bottom-right-radius: 20px;
+    position: fixed;
+    top: -10px;
+    left: -20px;
+    margin-bottom: 20px;
+    background-color: rgb(219, 115, 245);
+    z-index: 2; 
+    animation-name: headerAnimation;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+
+nav  img{
+    width: 55px;
+    height: 55px;
+    margin-left: 10px;
+    bottom: 5px;
+    position: absolute;
+}
+nav table tr td{
+    padding-right: 50px;
+    font-size: 30px;
+    size: 30px;
+    
+}
+nav table{
+    margin-left: 100px;
+    margin-top: 5px;
+    width: 75%;
+}
+nav a:hover{
+    background-color: rgb(169, 223, 196);
+    border-bottom-right-radius: 20px;
+    
+    border-bottom: solid 4px rgb(116, 224, 116);
+    /* box-shadow:  2px 3px 4px black; */
+}
+
+
+
+/*MAIN*/
+
+
+
+.avatar{
+    width: 300px;
+    height: 400px;
+    border-radius: 28px;
+    box-shadow: 9px 12px 14px rgba(0,0,0,0.25);
+    /* filter: contrast(115%); */
+    position: static;
+}
+
+.namecustomeze{
+    display: block;
+    border-radius: 10px;
+    width: 340px;
+    
+}
+.namecustomeze::before{
+    content: "";
+    padding-right: 20px;
+}
+
+.info{
+    margin-top: 80px;
+}
+.info p{
+    
+    margin-bottom: 4px;
+    color: #959dad;
+    margin: 5px;
+}
+.info strong{
+    color: #4b5e83;
+    font-size: 20px;
+}
+
+
+
+.container{
+    max-width: 850px;
+    margin: auto;
+   
+}
+
+
+
+.container a:hover {
+    background: none;
+    border: none;
+    box-shadow:  2px 3px 4px black;
+    border-radius: 0px;
+    
+}
+.tableWork{
+    margin-left: 50px;
+    text-align: center;
+    border-collapse: collapse;
+    border: 2px solid rgb(98, 98, 235);
+}
+.tableWork td{
+    
+    border: 1px solid rgb(98, 98, 235);
+    
+}
+.tableWork td:hover{
+    background-color: #5d80e0;
+    transform: scale(1.1);
+    
+}
+/* TABLE HOBBIES */
+.list{
+   margin-left: 40px;
+    /* border: 1px solid rgb(201, 175, 175); */
+}
+.list li{
+    width: 300px;
+}
+.list li:nth-child(n){
+
+    border: 1px solid rgb(201, 175, 175);
+}
+.list li:nth-child(even){
+    background-color: rgb(236, 235, 233);
+
+}
+
+
+.card{
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+.card h2 img{
+    width: 30px;
+    height: 30px;
+}
+.info h4{
+    margin-top: 50px;
+    margin-bottom: 0 ;
+}
+.bottom-side{
+    width: 100%;
+    height: 600px;
+}
+
+.example{
+    width: 300px;
+    height: 300px;
+    background-color: #007aed;
+    border: 2px solid black;
+    margin: auto;
+    margin-top: 50px;
+    animation-name: animation;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.example:hover{}
+
+
+
+
+
+
+hr{
+    color: rgb(212, 0, 255);
+    background-color: #c03ccc;
+    height: 2px;
+    border-radius: 25%;
+
+}
+
+/* TABLE WITH TECHNOLOGIES */
+.tb1 img{
+    width: 100px;
+    height: 100px;
+    margin-top: 20px;
+}
+.tb1 tbody td{
+    border: 2px solid blue;
+    min-width: 200px;
+    text-align: center;
+    border-radius: 10%;
+    vertical-align: top;
+    box-shadow:  5px 3px 10px rgb(70, 65, 65);
+}
+.tb1 td li:nth-child(odd){
+    background-color: #0087e7;
+    color: white;
+}
+.tb1 td li:nth-child(even){
+    background-color: white;
+}
+.tb1 thead td{
+    background-color: #0074ea;
+    position: relative;
+    bottom: 10px;
+    text-align: center;
+    color: white;
+    border-radius: 20px;
+    animation-name: textAnimation;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    
+}
+.tb1 ol{
+    margin-right: 30px;
+    list-style-type: none;
+}
+
+.tb1 {
+    margin-left: 10px;
+    margin-bottom: 30px;
+    border-spacing: 40px 0px;
+    
+}
+
+
+.size{
+    width: 50px;
+    height: 50px;
+    animation-direction: reverse;
+}
+
+
+.forContacts img,a{
+    width: 30px;
+    height: 30px;
+}
+
+
+.inputs{
+    box-sizing: border-box;
+    margin-top:40px;
+    margin-left: 20px;
+}
+.inputs input{
+    outline:none;
+    background-color: transparent;
+    border: 0px ;
+    border-bottom: 2px solid #333232;
+    
+    /* transition: 2s ease-in-out; */
+}
+
+.inputs label{
+    position: relative;
+    transition: .2s ease-in-out;
+    right: 180px;
+    color: #616161;
+    align-items: center;
+    font-size: 25px;
+    
+}
+.inputs input:focus{
+    border-bottom: 2px solid #db2d74;
+}
+.inputs input:focus + label{
+    bottom: 30px;
+    font-size: 20px;
+    color: #db2d74;
+    
+}
+.submitB {
+    margin-top: 30px;
+    margin-left: 20px;
+    border:2px solid #d72f83;
+    height: 40px;
+    width: 120px;
+    border-radius: 20px;
+    color:#d72f83 ;
+    background-color: transparent;
+    background-color: #e5ffe7;
+
+}
+.submitB:focus {
+    
+}
+.arrow{
+    width: 60px;
+    height: 60px;
+    
+    position: relative;
+    bottom: 10px;
+    
+    animation: sizeChange 3s infinite ,positionChange 3s infinite ;
+   
+}
+/*COLORS*/
+.bg-yellow{
+    background: #fff9dc;
+}
+.bg-green{
+    background: #e5ffe7; 
+}
+.bg-red{
+    background: #ffe5e5;
+}
+.bg-black{
+    background: #959dad;
+}
+/*ANIMATIONS */
+
+
+@keyframes animation{
+    from{
+        background-color:#007aed ;
+    }
+    50%{
+        background-color: #dd2e64;
+        transform: scale(1.2);
+    }
+    to{
+        background-color: #dd2e64;
+    }
+}
+
+@keyframes textAnimation{
+    from{
+        border-right:5px solid #c5cfe4;
+    }
+    50%{
+        
+        transform: scale(1.3);
+    }
+    to{
+        border-left:5px solid #c5cfe4;
+    }
+}
+
+
+@keyframes headerAnimation {
+    from, 100%{
+        background-color: #c03ccc
+    }
+    50%{
+        background-color: #007fed
+    };
+}
+
+
+@keyframes sizeChange {
+    from,100%{
+        transform: scale(1);
+        
+        
+    }
+    50%{
+        
+        transform: scale(1.4);
+        
+    }
+}
+@keyframes positionChange {
+    from,100%{
+        transform: translateY(-10px);
+        
+        
+    }
+    50%{
+        
+        transform: translateY(20px);
+        
+    }
+}
+/*
+    flesh card
+
+*/
+.maincont{
+    position: relative;
+    width: 250px;
+    height: 320px;
+   
+    margin: auto;
+    margin-left: 10px;
+}
+.maincont a{
+    color: #dd2e64;
+    
+}
+.maincont a:hover{
+    background-color: #0074ea;
+}
+.thecard{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style:preserve-3d;
+    transition: all 0.5s ease;
+    
+}
+.theText{
+    text-align: center;
+    font-size: 20px;
+}
+.theImage img{
+    width: 80%;
+    height: 70%;
+    position: relative;
+    
+    
+}
+.front h3{
+    color: white;
+    font-size: 25px;
+}
+.front{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background-color: #6d67de;
+    border-radius: 10%;
+    text-align: center;
+}
+.back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background-color: #1c1b2e;
+    color: #fafafa;
+    transform: rotateY(180deg);
+    border-radius: 10%;
+}
+.thecard:hover{
+    transform: rotateY(180deg);
+}
